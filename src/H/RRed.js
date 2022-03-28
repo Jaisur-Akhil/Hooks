@@ -1,25 +1,33 @@
 /** @format */
 
-import React from 'react';
+import React, { useReducer } from 'react';
 
-let reducer = (state, action) => {
+const reducer = (state, action) => {
   switch (action.type) {
     case 'Increment':
-      return { count: state.count + 1, showText };
+      return { count: state.count + 1, showText: state.showText };
     case 'toggle':
-      return { count, showText: !state.showText };
+      return { count: state.count, showText: !state.showText };
     default:
       return { state };
   }
 };
 
 const RRed = () => {
-  const [state, dispatch] = useReducer(reducer, { count: 0, showText });
+  const [state, dispatch] = useReducer(reducer, { count: 0, showText: true });
 
   return (
     <div>
       <>{state.count}</>
-      {!state.showText}
+      <button
+        onClick={() => {
+          dispatch({ type: 'Increment' });
+          dispatch({ type: 'toggle' });
+        }}>
+        Click Me
+      </button>
+
+      {state.showText && <p>This is a text</p>}
     </div>
   );
 };
