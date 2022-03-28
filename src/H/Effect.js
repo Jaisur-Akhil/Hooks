@@ -16,9 +16,9 @@ const Effect = () => {
       });
 
     return () => {};
-}, []);
-// }, [count]);
-    
+  }, []);
+  // }, [count]);
+
   return (
     <div>
       Data {data}

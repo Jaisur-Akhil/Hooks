@@ -5,7 +5,8 @@ import './App.css';
 // import State from './H/State';
 // import Red from './H/Red.js';
 // import RRed from './H/RRed';
-import Effect from './H/Effect';
+// import Effect from './H/Effect';
+import Ref from './H/Ref' ;
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <State /> */}
       {/* <Red /> */}
       {/* <RRed /> */}
-      <Effect />
+      {/* <Effect /> */}
+      <Ref/>
     </div>
   );
 }
