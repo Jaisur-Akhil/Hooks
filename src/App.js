@@ -8,8 +8,8 @@ import './App.css';
 // import Effect from './H/Effect';
 // import Ref from './H/Ref' ;
 // import Layout from './H/Layout';
-import ImperativeHandle from './H/ImperativeHandle';
-
+// import ImperativeHandle from './H/ImperativeHandle';
+import Context from './H/Context/Context';
 function App() {
   return (
     <div className='App'>
@@ -19,7 +19,8 @@ function App() {
       {/* <Effect /> */}
       {/* <Ref/> */}
       {/* <Layout /> */}
-      {<ImperativeHandle />}
+      {/* {<ImperativeHandle />} */}
+      <Context />
     </div>
   );
 }
