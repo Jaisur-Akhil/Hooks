@@ -10,10 +10,10 @@ const Context = () => {
   const [uname, setUname] = useState('');
 
   return (
-    <AppContext.provider value={{ uname, setUname }}>
+    <AppContext.Provider value={{ uname, setUname }}>
       <Login />
       <User />
-    </AppContext.provider>
+    </AppContext.Provider>
   );
 };
 
