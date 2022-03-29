@@ -7,7 +7,8 @@ import './App.css';
 // import RRed from './H/RRed';
 // import Effect from './H/Effect';
 // import Ref from './H/Ref' ;
-import Layout from './H/Layout';
+// import Layout from './H/Layout';
+import ImperativeHandle from './H/ImperativeHandle';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <RRed /> */}
       {/* <Effect /> */}
       {/* <Ref/> */}
-      <Layout />
+      {/* <Layout /> */}
+      {<ImperativeHandle />}
     </div>
   );
 }
