@@ -15,7 +15,7 @@ const Effect = () => {
         console.log('Api Was called');
       });
 
-    return () => {};
+    
   }, []);
   // }, [count]);
 
